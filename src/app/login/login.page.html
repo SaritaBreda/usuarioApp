@@ -1,0 +1,36 @@
+<ion-header>
+  <ion-toolbar color="secondary">
+    <ion-title class="ion-text-center">Login</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+&nbsp;
+
+<div class="container">
+
+  <ion-item>
+    <ion-label position="stacked">E-mail<ion-text color="danger">*</ion-text></ion-label>
+    <ion-input required type="email" oninput="handleFirstNameValue(event)"></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-label position="stacked">Senha<ion-text color="danger">*</ion-text></ion-label>
+    <ion-input required type="password" oninput="handleFirstNameValue(event)"></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-label>Manter-se conectado</ion-label>
+    <ion-checkbox color="primary" checked slot="start"></ion-checkbox>
+  </ion-item>
+
+&nbsp;
+
+  <div class="botao">
+    <ion-button color="success">Entrar</ion-button>
+    <ion-button color="primary" routerLink="/cadastro">Registrar-se</ion-button>
+  </div>
+
+</div>
+</ion-content>
+

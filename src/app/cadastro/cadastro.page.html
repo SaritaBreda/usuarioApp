@@ -1,0 +1,64 @@
+<ion-header>
+  <ion-toolbar color="secondary">
+    <ion-title class="ion-text-center">Cadastro</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+&nbsp;
+
+<div class="container">
+
+  <ion-item>
+    <ion-label position="stacked">Nome Completo<ion-text color="danger">*</ion-text></ion-label>
+    <ion-input required type="text"></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-label position="stacked">CPF<ion-text color="danger">*</ion-text></ion-label>
+    <ion-input required type="number"></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-label position="stacked">Data de Nascimento<ion-text color="danger">*</ion-text></ion-label>
+    <ion-datetime displayFormat="DD/MM/YYYY"></ion-datetime>
+  </ion-item>
+
+  <ion-item>
+    <ion-label position="stacked">Gênero<ion-text color="danger">*</ion-text></ion-label>
+      <ion-select>
+      <ion-select-option>Masculino</ion-select-option>
+      <ion-select-option>Feminino</ion-select-option>
+      <ion-select-option>Personalizado</ion-select-option>
+    </ion-select>
+  </ion-item>
+
+  <ion-item>
+    <ion-label position="stacked">Celular<ion-text color="danger">*</ion-text></ion-label>
+    <ion-input required type="number"></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-label position="stacked">E-mail<ion-text color="danger">*</ion-text></ion-label>
+    <ion-input required type="email"></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-label position="stacked">Senha<ion-text color="danger">*</ion-text></ion-label>
+    <ion-input required type="password"></ion-input>
+  </ion-item>
+
+    <ion-item>
+    <ion-label position="stacked">Confirmar senha<ion-text color="danger">*</ion-text></ion-label>
+    <ion-input required type="password" ></ion-input>
+  </ion-item>
+
+&nbsp;
+
+  <div class="botao">
+    <ion-button color="success">Salvar</ion-button>
+    <ion-button color="warning" routerLink="/home">Voltar</ion-button>
+  </div>
+
+</div>
+</ion-content>
